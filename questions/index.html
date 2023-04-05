@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="first-step">
+            <div class="headline">
+                <h1>General Knowledge Quiz</h1>
+            </div>
+            <div class="quiz-content">
+                <form>
+                    <label>Choose difficulty</label>
+                    <select id="level" name="level">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </form>
+                <form>
+                    <label>Choose amount of questions</label>
+                    <input id="number-of-questions" type="number" value="2">
+                </form>
+                <input id="start-quiz-btn" type="submit" value="Start Quiz">
+            </div>
+        </div>
+
+        <div class="second-step hide">
+            <div class="headline">
+                <div id="questionNumber"></div>
+            </div>
+            <div id="progress"></div>
+            <div class="quiz-content">
+                <div class="quiz-box">
+                    <div id="question"></div>
+                    <form id="quiz-data"></form>
+                    <input id="question-btn" type="submit" value="Question 1">
+                </div>
+             </div>
+        </div>
+        <div class="third-step hide">
+            <div id="summary"></div>
+            <div id="score"></div>
+            <input id="reset-btn" type="submit" value="Start again">
+        </div>
+            
+    </div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

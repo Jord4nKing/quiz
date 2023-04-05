@@ -1,0 +1,102 @@
+$bg-color: #C4D8E2;
+$button-color: #851e3e;
+$headline-color: #007AA5;
+$highlight-color: #003A6C;
+$content-box: #EBECF0;
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    color:#fff;;
+}
+
+.quiz-container {
+    background-color: $bg-color;
+    height:100vh;
+    width:80vw;
+    padding:10%;
+    margin: 0;
+
+    #progress {
+        background-color: #851e3e;
+        height:30px;
+        width:0;
+        transition: width 0.5s ease-in-out;
+    }
+
+    input, select {
+        padding:10px 5px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background: $button-color;
+        color:#fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        margin: 20px 0;
+    }
+
+    #question {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .headline {
+        background: $headline-color ;
+        padding: 10px 0 10px 20px;
+    }
+
+    .quiz-content {
+        background:$content-box;
+        padding:5%;
+    }
+
+    #questionNumber {
+        color:#fff;
+    }
+
+    .first-step {
+        
+        label {
+            display: block;
+            font-size: 1rem;
+            font-weight: bold;
+            margin:10px 0;
+        }
+    }
+
+    .third-step {
+        #summary{
+            background: #EBECF0;
+            width:100%;
+            padding:5%;
+        }
+
+        #score {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    .hide {
+        display:none;
+    }
+
+    .quiz-box {
+        background-color:$content-box;
+        margin:0 auto;
+    }
+}
+
