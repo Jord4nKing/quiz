@@ -98,12 +98,12 @@ function startQuiz () {
         resetBtn.addEventListener('click', resetQuiz)
 
         function resetQuiz () {
-            checkAnswer()
             numQuestions = undefined
             difficulty = undefined
             currentQuestion = 0
             correctAnswersScore = 0
             wrongAnswers = []
+            question.innerHTML = ""
             quizAnswers.innerHTML = ""
             summary.innerHTML = ""
             progressBar.style.width = "0%";
